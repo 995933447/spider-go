@@ -1,0 +1,1102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7cadd228-d1ec-474e-a038-c181fed91b4d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/fetcher/config/http.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fetcher/config/ipproxy.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fetcher/html_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fetcher/httprequest.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fetcher/ipproxy.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/process/app/tangcc/fetcher/file.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/process/app/xvideo/AV/config/config.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/process/app/xvideo/AV/config/types.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/process/app/xvideo/AV/itemworker/video.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/process/app/xvideo/AV/itemworker/video_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/process/app/xvideo/AV/parser/categories.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/process/app/xvideo/AV/parser/video.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/process/app/xvideo/AV/persist/categories.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/process/app/xvideo/AV/persist/saverclient/mysql.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/process/app/xvideo/AV/persist/video.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/process/app/xvideo/choice/config/config.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/process/app/xvideo/choice/config/types.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/process/app/xvideo/choice/itemworker/video.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/process/app/xvideo/choice/itemworker/video_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/process/app/xvideo/choice/parser/categories.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/process/app/xvideo/choice/parser/video.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/process/app/xvideo/choice/persist/categories.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/process/app/xvideo/choice/persist/saverclient/mysql.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/process/app/xvideo/choice/persist/video.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/command/starter/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/command/starter/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/persist/mysql.go" beforeDir="false" afterPath="$PROJECT_DIR$/config/persist/mysql.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/distinctor/distinctor.go" beforeDir="false" afterPath="$PROJECT_DIR$/distinctor/distinctor.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/engine.go" beforeDir="false" afterPath="$PROJECT_DIR$/engine/engine.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/work.go" beforeDir="false" afterPath="$PROJECT_DIR$/engine/work.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fetcher/config/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/fetcher/config/ratelimit.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fetcher/file.go" beforeDir="false" afterPath="$PROJECT_DIR$/fetcher/file.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fetcher/html.go" beforeDir="false" afterPath="$PROJECT_DIR$/fetcher/html.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fetcher/ratelimit.go" beforeDir="false" afterPath="$PROJECT_DIR$/fetcher/ratelimit.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/defaultlogger.go" beforeDir="false" afterPath="$PROJECT_DIR$/logger/defaultlogger.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger/mysql/sqllogger.go" beforeDir="false" afterPath="$PROJECT_DIR$/logger/mysql/sqllogger.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process/app/airav/itemworker/videos.go" beforeDir="false" afterPath="$PROJECT_DIR$/process/app/airav/itemworker/videos.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process/app/airav/persist/categories.go" beforeDir="false" afterPath="$PROJECT_DIR$/process/app/airav/persist/categories.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process/app/airav/persist/saverclient/mysql.go" beforeDir="false" afterPath="$PROJECT_DIR$/process/app/airav/persist/saverclient/mysql.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process/app/airav/persist/videos.go" beforeDir="false" afterPath="$PROJECT_DIR$/process/app/airav/persist/videos.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process/app/avhd101/fetcher/video.go" beforeDir="false" afterPath="$PROJECT_DIR$/process/app/avhd101/fetcher/video.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process/app/avhd101/itemworker/videos.go" beforeDir="false" afterPath="$PROJECT_DIR$/process/app/avhd101/itemworker/videos.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process/app/avhd101/persist/categorywithsubjects.go" beforeDir="false" afterPath="$PROJECT_DIR$/process/app/avhd101/persist/categorywithsubjects.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process/app/avhd101/persist/saverclient/mysql.go" beforeDir="false" afterPath="$PROJECT_DIR$/process/app/avhd101/persist/saverclient/mysql.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process/app/avhd101/persist/video.go" beforeDir="false" afterPath="$PROJECT_DIR$/process/app/avhd101/persist/video.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process/app/javdove/config/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/process/app/javdove/config/config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process/app/javdove/itemworker/categories.go" beforeDir="false" afterPath="$PROJECT_DIR$/process/app/javdove/itemworker/categories.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process/app/javdove/itemworker/videos.go" beforeDir="false" afterPath="$PROJECT_DIR$/process/app/javdove/itemworker/videos.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process/app/javdove/parser/categories.go" beforeDir="false" afterPath="$PROJECT_DIR$/process/app/javdove/parser/categories.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process/app/javdove/parser/videos.go" beforeDir="false" afterPath="$PROJECT_DIR$/process/app/javdove/parser/videos.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process/app/javdove/persist/categories.go" beforeDir="false" afterPath="$PROJECT_DIR$/process/app/javdove/persist/categories.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process/app/javdove/persist/saverclient/mysql.go" beforeDir="false" afterPath="$PROJECT_DIR$/process/app/javdove/persist/saverclient/mysql.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process/app/javdove/persist/videos.go" beforeDir="false" afterPath="$PROJECT_DIR$/process/app/javdove/persist/videos.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process/app/julyporn/fetcher/categories.go" beforeDir="false" afterPath="$PROJECT_DIR$/process/app/julyporn/fetcher/categories.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process/app/julyporn/itemworker/videos.go" beforeDir="false" afterPath="$PROJECT_DIR$/process/app/julyporn/itemworker/videos.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process/app/julyporn/parser/video.go" beforeDir="false" afterPath="$PROJECT_DIR$/process/app/julyporn/parser/video.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process/app/julyporn/persist/categories.go" beforeDir="false" afterPath="$PROJECT_DIR$/process/app/julyporn/persist/categories.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process/app/julyporn/persist/saverclient/mysql.go" beforeDir="false" afterPath="$PROJECT_DIR$/process/app/julyporn/persist/saverclient/mysql.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process/app/julyporn/persist/video.go" beforeDir="false" afterPath="$PROJECT_DIR$/process/app/julyporn/persist/video.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process/app/tangcc/config/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/process/app/tangcc/config/config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process/app/tangcc/config/types.go" beforeDir="false" afterPath="$PROJECT_DIR$/process/app/tangcc/config/types.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process/app/tangcc/itemworker/videos.go" beforeDir="false" afterPath="$PROJECT_DIR$/process/app/tangcc/itemworker/videos.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process/app/tangcc/parser/categories.go" beforeDir="false" afterPath="$PROJECT_DIR$/process/app/tangcc/parser/categories.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process/app/tangcc/parser/topics.go" beforeDir="false" afterPath="$PROJECT_DIR$/process/app/tangcc/parser/topics.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process/app/tangcc/parser/video.go" beforeDir="false" afterPath="$PROJECT_DIR$/process/app/tangcc/parser/video.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process/app/tangcc/parser/videopages.go" beforeDir="false" afterPath="$PROJECT_DIR$/process/app/tangcc/parser/videopages.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process/app/tangcc/parser/videos.go" beforeDir="false" afterPath="$PROJECT_DIR$/process/app/tangcc/parser/videos.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process/app/tangcc/persist/categories.go" beforeDir="false" afterPath="$PROJECT_DIR$/process/app/tangcc/persist/categories.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process/app/tangcc/persist/saverclient/mysql.go" beforeDir="false" afterPath="$PROJECT_DIR$/process/app/tangcc/persist/saverclient/mysql.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process/app/tangcc/persist/subjects.go" beforeDir="false" afterPath="$PROJECT_DIR$/process/app/tangcc/persist/subjects.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process/app/tangcc/persist/video.go" beforeDir="false" afterPath="$PROJECT_DIR$/process/app/tangcc/persist/video.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process/app/xvideo/aichange/config/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/process/app/xvideo/aichange/config/config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process/app/xvideo/aichange/config/types.go" beforeDir="false" afterPath="$PROJECT_DIR$/process/app/xvideo/aichange/config/types.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process/app/xvideo/aichange/itemworker/video.go" beforeDir="false" afterPath="$PROJECT_DIR$/process/app/xvideo/aichange/itemworker/video.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process/app/xvideo/aichange/itemworker/video_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/process/app/xvideo/aichange/itemworker/video_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process/app/xvideo/aichange/parser/categories.go" beforeDir="false" afterPath="$PROJECT_DIR$/process/app/xvideo/aichange/parser/categories.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process/app/xvideo/aichange/parser/video.go" beforeDir="false" afterPath="$PROJECT_DIR$/process/app/xvideo/aichange/parser/video.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process/app/xvideo/aichange/persist/categories.go" beforeDir="false" afterPath="$PROJECT_DIR$/process/app/xvideo/aichange/persist/categories.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process/app/xvideo/aichange/persist/saverclient/mysql.go" beforeDir="false" afterPath="$PROJECT_DIR$/process/app/xvideo/aichange/persist/saverclient/mysql.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process/app/xvideo/aichange/persist/video.go" beforeDir="false" afterPath="$PROJECT_DIR$/process/app/xvideo/aichange/persist/video.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process/distinctor/video.go" beforeDir="false" afterPath="$PROJECT_DIR$/process/distinctor/video.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process/model/categories.go" beforeDir="false" afterPath="$PROJECT_DIR$/process/model/categories.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process/model/videos.go" beforeDir="false" afterPath="$PROJECT_DIR$/process/model/videos.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-redis/redis/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-redis/redis/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-redis/redis/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-redis/redis/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-redis/redis/cluster.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-redis/redis/cluster_commands.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-redis/redis/command.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-redis/redis/commands.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-redis/redis/doc.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-redis/redis/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-redis/redis/go.sum" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-redis/redis/internal/consistenthash/consistenthash.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-redis/redis/internal/error.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-redis/redis/internal/hashtag/hashtag.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-redis/redis/internal/internal.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-redis/redis/internal/log.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-redis/redis/internal/once.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-redis/redis/internal/pool/conn.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-redis/redis/internal/pool/pool.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-redis/redis/internal/pool/pool_single.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-redis/redis/internal/pool/pool_sticky.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-redis/redis/internal/proto/reader.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-redis/redis/internal/proto/scan.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-redis/redis/internal/proto/writer.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-redis/redis/internal/util.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-redis/redis/internal/util/safe.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-redis/redis/internal/util/strconv.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-redis/redis/internal/util/unsafe.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-redis/redis/iterator.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-redis/redis/options.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-redis/redis/pipeline.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-redis/redis/pubsub.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-redis/redis/redis.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-redis/redis/result.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-redis/redis/ring.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-redis/redis/script.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-redis/redis/sentinel.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-redis/redis/tx.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-redis/redis/universal.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-sql-driver/mysql/AUTHORS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-sql-driver/mysql/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-sql-driver/mysql/CONTRIBUTING.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-sql-driver/mysql/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-sql-driver/mysql/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-sql-driver/mysql/appengine.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-sql-driver/mysql/auth.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-sql-driver/mysql/buffer.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-sql-driver/mysql/collations.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-sql-driver/mysql/conncheck.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-sql-driver/mysql/conncheck_dummy.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-sql-driver/mysql/connection.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-sql-driver/mysql/connector.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-sql-driver/mysql/const.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-sql-driver/mysql/driver.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-sql-driver/mysql/driver_go110.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-sql-driver/mysql/dsn.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-sql-driver/mysql/errors.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-sql-driver/mysql/fields.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-sql-driver/mysql/infile.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-sql-driver/mysql/packets.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-sql-driver/mysql/result.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-sql-driver/mysql/rows.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-sql-driver/mysql/statement.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-sql-driver/mysql/transaction.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-sql-driver/mysql/utils.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-xorm/xorm/CONTRIBUTING.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-xorm/xorm/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-xorm/xorm/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-xorm/xorm/README_CN.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-xorm/xorm/cache_lru.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-xorm/xorm/cache_memory_store.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-xorm/xorm/context_cache.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-xorm/xorm/convert.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-xorm/xorm/dialect_mssql.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-xorm/xorm/dialect_mysql.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-xorm/xorm/dialect_oracle.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-xorm/xorm/dialect_postgres.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-xorm/xorm/dialect_sqlite3.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-xorm/xorm/doc.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-xorm/xorm/engine.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-xorm/xorm/engine_cond.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-xorm/xorm/engine_context.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-xorm/xorm/engine_group.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-xorm/xorm/engine_group_policy.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-xorm/xorm/engine_table.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-xorm/xorm/error.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-xorm/xorm/gen_reserved.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-xorm/xorm/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-xorm/xorm/go.sum" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-xorm/xorm/helpers.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-xorm/xorm/helpler_time.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-xorm/xorm/interface.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-xorm/xorm/json.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-xorm/xorm/logger.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-xorm/xorm/pg_reserved.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-xorm/xorm/processors.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-xorm/xorm/rows.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-xorm/xorm/session.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-xorm/xorm/session_cols.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-xorm/xorm/session_cond.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-xorm/xorm/session_context.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-xorm/xorm/session_convert.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-xorm/xorm/session_delete.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-xorm/xorm/session_exist.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-xorm/xorm/session_find.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-xorm/xorm/session_get.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-xorm/xorm/session_insert.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-xorm/xorm/session_iterate.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-xorm/xorm/session_query.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-xorm/xorm/session_raw.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-xorm/xorm/session_schema.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-xorm/xorm/session_stats.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-xorm/xorm/session_tx.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-xorm/xorm/session_update.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-xorm/xorm/statement.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-xorm/xorm/syslogger.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-xorm/xorm/tag.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-xorm/xorm/test_mssql.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-xorm/xorm/test_mssql_cache.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-xorm/xorm/test_mymysql.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-xorm/xorm/test_mymysql_cache.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-xorm/xorm/test_mysql.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-xorm/xorm/test_mysql_cache.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-xorm/xorm/test_postgres.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-xorm/xorm/test_postgres_cache.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-xorm/xorm/test_sqlite.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-xorm/xorm/test_sqlite_cache.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-xorm/xorm/test_tidb.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-xorm/xorm/transaction.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-xorm/xorm/types.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-xorm/xorm/xorm.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/satori/go.uuid/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/satori/go.uuid/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/satori/go.uuid/codec.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/satori/go.uuid/generator.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/satori/go.uuid/sql.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/satori/go.uuid/uuid.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/PATENTS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/atom/atom.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/atom/gen.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/atom/table.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/charset/charset.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/const.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/doc.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/doctype.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/entity.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/escape.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/foreign.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/node.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/parse.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/render.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/net/html/token.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/PATENTS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/encoding/charmap/charmap.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/encoding/charmap/maketables.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/encoding/charmap/tables.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/encoding/encoding.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/encoding/htmlindex/gen.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/encoding/htmlindex/htmlindex.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/encoding/htmlindex/map.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/encoding/htmlindex/tables.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/encoding/internal/identifier/gen.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/encoding/internal/identifier/identifier.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/encoding/internal/identifier/mib.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/encoding/internal/internal.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/encoding/japanese/all.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/encoding/japanese/eucjp.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/encoding/japanese/iso2022jp.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/encoding/japanese/maketables.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/encoding/japanese/shiftjis.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/encoding/japanese/tables.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/encoding/korean/euckr.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/encoding/korean/maketables.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/encoding/korean/tables.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/encoding/simplifiedchinese/all.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/encoding/simplifiedchinese/gbk.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/encoding/simplifiedchinese/hzgb2312.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/encoding/simplifiedchinese/maketables.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/encoding/simplifiedchinese/tables.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/encoding/traditionalchinese/big5.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/encoding/traditionalchinese/maketables.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/encoding/traditionalchinese/tables.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/encoding/unicode/override.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/encoding/unicode/unicode.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/internal/language/common.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/internal/language/compact.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/internal/language/compact/compact.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/internal/language/compact/gen.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/internal/language/compact/gen_index.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/internal/language/compact/gen_parents.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/internal/language/compact/language.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/internal/language/compact/parents.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/internal/language/compact/tables.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/internal/language/compact/tags.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/internal/language/compose.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/internal/language/coverage.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/internal/language/gen.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/internal/language/gen_common.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/internal/language/language.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/internal/language/lookup.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/internal/language/match.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/internal/language/parse.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/internal/language/tables.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/internal/language/tags.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/internal/tag/tag.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/internal/utf8internal/utf8internal.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/language/coverage.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/language/doc.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/language/gen.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/language/go1_1.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/language/go1_2.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/language/language.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/language/match.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/language/parse.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/language/tables.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/language/tags.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/runes/cond.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/runes/runes.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/transform/transform.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/tools/firesystem/file.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/tools/firesystem/video.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/tools/htmlutil/htmlencoding.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/tools/logger/logger.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/tools/logger/writers/config.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/tools/logger/writers/console/console.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/tools/logger/writers/file/file.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/tools/rand/rand.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/tools/timer/date.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/tools/timer/timestamp.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/tools/url/uri.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/vendor.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/xorm.io/builder/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/xorm.io/builder/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/xorm.io/builder/builder.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/xorm.io/builder/builder_delete.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/xorm.io/builder/builder_insert.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/xorm.io/builder/builder_limit.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/xorm.io/builder/builder_select.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/xorm.io/builder/builder_union.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/xorm.io/builder/builder_update.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/xorm.io/builder/cond.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/xorm.io/builder/cond_and.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/xorm.io/builder/cond_between.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/xorm.io/builder/cond_compare.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/xorm.io/builder/cond_eq.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/xorm.io/builder/cond_expr.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/xorm.io/builder/cond_if.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/xorm.io/builder/cond_in.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/xorm.io/builder/cond_like.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/xorm.io/builder/cond_neq.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/xorm.io/builder/cond_not.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/xorm.io/builder/cond_notin.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/xorm.io/builder/cond_null.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/xorm.io/builder/cond_or.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/xorm.io/builder/doc.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/xorm.io/builder/error.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/xorm.io/builder/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/xorm.io/builder/go.sum" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/xorm.io/builder/sql.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/xorm.io/builder/string_builder.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/xorm.io/core/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/xorm.io/core/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/xorm.io/core/benchmark.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/xorm.io/core/cache.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/xorm.io/core/column.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/xorm.io/core/converstion.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/xorm.io/core/db.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/xorm.io/core/dialect.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/xorm.io/core/driver.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/xorm.io/core/error.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/xorm.io/core/filter.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/xorm.io/core/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/xorm.io/core/go.sum" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/xorm.io/core/ilogger.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/xorm.io/core/index.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/xorm.io/core/mapper.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/xorm.io/core/pk.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/xorm.io/core/rows.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/xorm.io/core/scan.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/xorm.io/core/stmt.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/xorm.io/core/table.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/xorm.io/core/tx.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/xorm.io/core/type.go" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="spider-go" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/command/starter/main.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-608">
+              <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+              <folding>
+                <element signature="e#14#661#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/process/app/xvideo/choice/config/config.go">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/process/app/xvideo/choice/parser/categories.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="492">
+              <caret line="42" column="63" selection-start-line="42" selection-start-column="63" selection-end-line="42" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/process/app/xvideo/AV/config/types.go">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/process/app/xvideo/AV/persist/categories.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/process/app/xvideo/AV/parser/categories.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="21" column="100" selection-start-line="21" selection-start-column="100" selection-end-line="21" selection-end-column="100" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/process/app/xvideo/AV/persist/video.go">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/process/app/xvideo/choice/persist/categories.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/process/app/xvideo/choice/persist/video.go">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/process/app/xvideo/choice/parser/video.go">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>num</find>
+      <find>Distinctor: config.NilDistinctor{}</find>
+      <find>Requests</find>
+      <find>filesystem</find>
+      <find>无码</find>
+      <find>x:</find>
+      <find>julypornPersist2</find>
+      <find>i</find>
+      <find>persist2</find>
+      <find>fetcher2</find>
+      <find>s</find>
+      <find>config2</find>
+      <find>ts</find>
+      <find>parse</find>
+      <find>e</find>
+      <find>URL</find>
+      <find>m3u8</find>
+      <find>404</find>
+      <find>:</find>
+      <find>d:</find>
+      <find>error</find>
+      <find>mis</find>
+      <find>fetc</find>
+      <find>err</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>javdovePersist</replace>
+      <replace>javdovePersist2</replace>
+      <replace>julypornPersist</replace>
+      <replace>avhd101Persist</replace>
+      <replace>julypornConfig</replace>
+      <replace>avhd101Fetcher</replace>
+      <replace>avhd101Config</replace>
+      <replace>airavConfig</replace>
+      <replace>engine</replace>
+    </replaceStrings>
+  </component>
+  <component name="GOROOT" path="C:\Go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/process/app/avhd101/parser/categorywithsubjects.go" />
+        <option value="$PROJECT_DIR$/process/app/avhd101/parser/video.go" />
+        <option value="$PROJECT_DIR$/process/app/avhd101/parser/videos.go" />
+        <option value="$PROJECT_DIR$/process/app/javdove/config/config.go" />
+        <option value="$PROJECT_DIR$/process/app/javdove/config/types.go" />
+        <option value="$PROJECT_DIR$/process/app/javdove/config/video.go" />
+        <option value="$PROJECT_DIR$/process/app/julyporn/config/config.go" />
+        <option value="$PROJECT_DIR$/process/app/julyporn/parser/categories.go" />
+        <option value="$PROJECT_DIR$/process/app/julyporn/parser/video.go" />
+        <option value="$PROJECT_DIR$/process/app/julyporn/parser/videopages.go" />
+        <option value="$PROJECT_DIR$/process/app/julyporn/parser/videos.go" />
+        <option value="$PROJECT_DIR$/process/repository/categories.go" />
+        <option value="$PROJECT_DIR$/process/app/avhd101/itemworker/videos.go" />
+        <option value="$PROJECT_DIR$/vendor/util/logger/writers/console/console.go" />
+        <option value="$PROJECT_DIR$/vendor/util/logger/writers/file/file.go" />
+        <option value="$PROJECT_DIR$/engine/work.go" />
+        <option value="$PROJECT_DIR$/engine/engine.go" />
+        <option value="$PROJECT_DIR$/fetcher/config/ipproxy.go" />
+        <option value="$PROJECT_DIR$/fetcher/request.go" />
+        <option value="$PROJECT_DIR$/fetcher/httprequest.go" />
+        <option value="$PROJECT_DIR$/process/app/avhd101/fetcher/video.go" />
+        <option value="$PROJECT_DIR$/process/app/julyporn/fetcher/categories.go" />
+        <option value="$PROJECT_DIR$/fetcher/ipproxy.go" />
+        <option value="$PROJECT_DIR$/fetcher/html_test.go" />
+        <option value="$PROJECT_DIR$/process/app/xvideo/aichange/config/types.go" />
+        <option value="$PROJECT_DIR$/process/app/xvideo/aichange/parser/video.go" />
+        <option value="$PROJECT_DIR$/vendor/util/filesystem/video.go" />
+        <option value="$PROJECT_DIR$/process/app/xvideo/aichange/itemworker/video.go" />
+        <option value="$PROJECT_DIR$/process/app/xvideo/aichange/config/config.go" />
+        <option value="$PROJECT_DIR$/process/app/javdove/itemworker/videos.go" />
+        <option value="$PROJECT_DIR$/process/app/javdove/persist/videos.go" />
+        <option value="$PROJECT_DIR$/fetcher/config/http.go" />
+        <option value="$PROJECT_DIR$/fetcher/ratelimit.go" />
+        <option value="$PROJECT_DIR$/fetcher/html.go" />
+        <option value="$PROJECT_DIR$/fetcher/file.go" />
+        <option value="$PROJECT_DIR$/process/app/tangcc/fetcher/file.go" />
+        <option value="$PROJECT_DIR$/process/app/tangcc/parser/topics.go" />
+        <option value="$PROJECT_DIR$/process/app/tangcc/parser/categories.go" />
+        <option value="$PROJECT_DIR$/process/app/tangcc/parser/videos.go" />
+        <option value="$PROJECT_DIR$/process/app/tangcc/persist/video.go" />
+        <option value="$PROJECT_DIR$/process/app/tangcc/config/config.go" />
+        <option value="$PROJECT_DIR$/process/app/tangcc/itemworker/videos.go" />
+        <option value="$PROJECT_DIR$/process/app/tangcc/parser/videopages.go" />
+        <option value="$PROJECT_DIR$/config/persist/mysql.go" />
+        <option value="$PROJECT_DIR$/process/app/xvideo/aichange/parser/categories.go" />
+        <option value="$PROJECT_DIR$/fetcher/config/ratelimit.go" />
+        <option value="$PROJECT_DIR$/process/app/xvideo/choice/persist/categories.go" />
+        <option value="$PROJECT_DIR$/process/app/xvideo/AV/persist/categories.go" />
+        <option value="$PROJECT_DIR$/process/app/xvideo/choice/parser/categories.go" />
+        <option value="$PROJECT_DIR$/process/app/xvideo/AV/parser/categories.go" />
+        <option value="$PROJECT_DIR$/command/starter/main.go" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="62" />
+    <option name="y" value="2" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.gopath.indexing.explicitly.defined" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.vendoring.notification.had.been.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/process/app/xvideo" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\goproject\src\spider-go\apps" />
+      <recent name="D:\goproject\src\spider-go\apps\module" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\goproject\src\spider-go\process\app\xvideo" />
+      <recent name="D:\goproject\src\spider-go\process\app\tangcc\persist" />
+      <recent name="D:\goproject\src\spider-go\apps\airav\parser" />
+      <recent name="D:\goproject\src\spider-go\apps" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Go Build.go build main.go (1)">
+    <configuration name="go build main.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="spider-go" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/command/starter/main.go" />
+      <package value="spider-go" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestCategories in spider-go/app/module/xvideo/aichange/parser" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="spider-go" />
+      <working_directory value="$PROJECT_DIR$/app/module/xvideo/aichange/parser" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="spider-go/app/module/xvideo/aichange/parser" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestCategories$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestHtml in spider-go/fetcher" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="spider-go" />
+      <working_directory value="$PROJECT_DIR$/fetcher" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="spider-go/fetcher" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestHtml$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestVideoMainImg in spider-go/apps/avhd101/parser" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="spider-go" />
+      <working_directory value="$PROJECT_DIR$/apps/avhd101/parser" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="spider-go/apps/avhd101/parser" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestVideoMainImg$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestVideos in spider-go/process/app/tangcc/itemjob" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="spider-go" />
+      <working_directory value="$PROJECT_DIR$/process/app/tangcc/itemjob" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="spider-go/process/app/tangcc/itemjob" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestVideos$" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build main.go (1)" />
+        <item itemvalue="Go Test.TestHtml in spider-go/fetcher" />
+        <item itemvalue="Go Test.TestVideos in spider-go/process/app/tangcc/itemjob" />
+        <item itemvalue="Go Test.TestCategories in spider-go/app/module/xvideo/aichange/parser" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7cadd228-d1ec-474e-a038-c181fed91b4d" name="Default Changelist" comment="" />
+      <created>1563186453775</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1563186453775</updated>
+      <workItem from="1563186455054" duration="261000" />
+      <workItem from="1563789974831" duration="4843000" />
+      <workItem from="1563798150198" duration="15000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="TestVideoMainImg_in_spider-go_apps_avhd101_parser - 2019.07.14 at 12h 42m 11s.xml">
+      <configuration name="TestVideoMainImg in spider-go/apps/avhd101/parser" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestCategories_in_spider-go_app_module_xvideo_aichange_parser - 2019.08.09 at 18h 16m 58s.xml">
+      <configuration name="TestCategories in spider-go/app/module/xvideo/aichange/parser" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestVideos_in_spider-go_process_app_tangcc_itemjob - 2019.08.12 at 16h 43m 16s.xml">
+      <configuration name="TestVideos in spider-go/process/app/tangcc/itemjob" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestVideos_in_spider-go_process_app_tangcc_itemjob - 2019.08.12 at 17h 40m 00s.xml">
+      <configuration name="TestVideos in spider-go/process/app/tangcc/itemjob" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestVideos_in_spider-go_process_app_tangcc_itemjob - 2019.08.12 at 17h 57m 41s.xml">
+      <configuration name="TestVideos in spider-go/process/app/tangcc/itemjob" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestVideos_in_spider-go_process_app_tangcc_itemjob - 2019.08.12 at 18h 49m 05s.xml">
+      <configuration name="TestVideos in spider-go/process/app/tangcc/itemjob" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestVideos_in_spider-go_process_app_tangcc_itemjob - 2019.08.12 at 18h 51m 50s.xml">
+      <configuration name="TestVideos in spider-go/process/app/tangcc/itemjob" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestHtml_in_spider-go_fetcher - 2019.08.15 at 16h 32m 37s.xml">
+      <configuration name="TestHtml in spider-go/fetcher" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestHtml_in_spider-go_fetcher - 2019.08.15 at 17h 02m 00s.xml">
+      <configuration name="TestHtml in spider-go/fetcher" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestHtml_in_spider-go_fetcher - 2019.08.15 at 17h 38m 04s.xml">
+      <configuration name="TestHtml in spider-go/fetcher" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="5119000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="62" y="2" width="1936" height="1056" extended-state="0" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49838188" weight="0.1705757" />
+      <window_info id="Structure" order="1" sideWeight="0.50161815" side_tool="true" weight="0.16897655" />
+      <window_info id="Favorites" order="2" sideWeight="0.50161815" side_tool="true" weight="0.16897655" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.329718" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50053304" side_tool="true" weight="0.329718" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10021322" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.329718" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50053304" side_tool="true" weight="0.329718" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/config/types.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process/app/xvideo/aichange/config/types.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/util/filesystem/video.go" />
+    <entry file="file://$PROJECT_DIR$/process/app/xvideo/aichange/persist/categories.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process/app/xvideo/aichange/persist/video.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-78" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process/app/xvideo/aichange/itemworker/video.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="123" column="46" selection-start-line="123" selection-start-column="46" selection-end-line="123" selection-end-column="46" />
+          <folding>
+            <element signature="e#20#352#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process/app/xvideo/aichange/config/config.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process/distinctor/video.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="36" column="29" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process/app/tangcc/itemworker/videos_test.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process/app/javdove/persist/saverclient/mysql.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="e#21#122#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process/app/javdove/itemworker/categories.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process/app/javdove/itemworker/videos.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="148" selection-start-line="148" selection-end-line="148" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process/app/javdove/parser/categories.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="46" column="32" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process/app/javdove/parser/videos.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-210">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process/app/javdove/parser/video.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-114" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process/app/javdove/persist/categories.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-285" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process/app/javdove/persist/videos.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="33" column="44" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fetcher/html_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="21" column="46" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/util/rand/rand.go" />
+    <entry file="file://$PROJECT_DIR$/fetcher/config/ipproxy.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fetcher/config/http.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fetcher/ratelimit.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="7" column="5" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process/app/tangcc/persist/subjects.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process/app/tangcc/persist/categories.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process/app/tangcc/parser/video.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="e#16#131#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process/app/tangcc/parser/topics.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="31" column="42" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process/app/tangcc/parser/videos.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="931">
+          <caret line="59" selection-start-line="59" selection-end-line="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process/app/tangcc/itemworker/videos.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2223">
+          <caret line="134" column="43" selection-start-line="134" selection-start-column="43" selection-end-line="134" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process/app/tangcc/persist/video.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="931">
+          <caret line="57" column="44" selection-start-line="57" selection-start-column="44" selection-end-line="57" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process/app/julyporn/config/config.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process/app/tangcc/fetcher/file.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process/app/tangcc/config/config.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="36" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fetcher/file.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="891">
+          <caret line="74" selection-start-line="74" selection-end-line="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fetcher/html.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process/app/tangcc/parser/categories.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="35" column="31" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process/app/tangcc/parser/videopages.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="29" column="33" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process/app/xvideo/aichange/parser/video.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process/app/xvideo/aichange/parser/categories.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#16#146#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fetcher/config/ratelimit.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/persist/mysql.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process/app/xvideo/choice/config/types.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process/app/xvideo/choice/config/config.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process/app/xvideo/choice/parser/video.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process/app/xvideo/choice/persist/video.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process/app/xvideo/choice/persist/categories.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process/app/xvideo/AV/config/types.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process/app/xvideo/AV/persist/video.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process/app/xvideo/choice/parser/categories.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="42" column="63" selection-start-line="42" selection-start-column="63" selection-end-line="42" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process/app/xvideo/AV/persist/categories.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/process/app/xvideo/AV/parser/categories.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="21" column="100" selection-start-line="21" selection-start-column="100" selection-end-line="21" selection-end-column="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/command/starter/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-608">
+          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+          <folding>
+            <element signature="e#14#661#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

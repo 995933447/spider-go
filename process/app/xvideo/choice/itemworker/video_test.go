@@ -1,0 +1,22 @@
+package itemworker
+
+import (
+	"fmt"
+	"regexp"
+	"spider-go/parseutil"
+	"testing"
+)
+
+func TestVideo(t *testing.T) {
+	c := `#EXTM3U
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=763904,RESOLUTION=738x554,NAME="480p"
+hls-480p.m3u8?e=1565867360&l=0&h=2a6390d7914604df65821fea7af1cd61
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1327104,RESOLUTION=1110x832,NAME="720p"
+hls-720p.m3u8?e=1565867360&l=0&h=2a6390d7914604df65821fea7af1cd61
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=423936,RESOLUTION=554x416,NAME="360p"
+hls-360p.m3u8?e=1565867360&l=0&h=2a6390d7914604df65821fea7af1cd61
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=155648,RESOLUTION=384x288,NAME="250p"
+hls-250p.m3u8?e=1565867360&l=0&h=2a6390d7914604df65821fea7af1cd61`
+	reg := regexp.MustCompile(`(hls-360p\.m3u8.*)`)
+	fmt.Println("r:" + parseutil.ExtractString(reg, []byte(c)))
+}
