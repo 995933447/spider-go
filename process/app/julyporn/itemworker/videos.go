@@ -13,6 +13,7 @@ import (
 	"spider-go/fetcher"
 	"spider-go/logger"
 	"spider-go/parseutil"
+	"strings"
 	"util/filesystem"
 	"util/url"
 )
@@ -41,14 +42,14 @@ func doVideoWork(items *[]config.Item, saveChan *chan model.Videos)  {
 				logger.DefaultLogger.Error(err, nil)
 				return
 			}
-			video.Mainimg = mainImg
+			video.Mainimg = strings.TrimLeft(mainImg, julypornConfig.RemoveLocalDir)
 
 			videoFile, err := downloadVideo(&video.OriginalM3u8, &dir)
 			if err != nil {
 				logger.DefaultLogger.Error(err, nil)
 				return
 			}
-			video.M3u8 = videoFile
+			video.M3u8 = strings.TrimLeft(videoFile, julypornConfig.RemoveLocalDir)
 
 			category ,err := repository.GetCategory(item.(julypornConfig.VideoItem).Category)
 			if err != nil {

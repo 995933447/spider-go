@@ -19,9 +19,6 @@ func VideoPages(content []byte, categoryUrl string, categoryName string) config.
 	} else {
 		pages := parseutil.ParseMatchesToString(pageMatches)
 		lastPage, _ = strconv.Atoi(pages[len(pages) - 1])
-		//if lastPage > 5 {
-		//	lastPage = 5
-		//}
 		for i:= 1; i <= lastPage; i++ {
 			result.Requests = append(result.Requests, config.Request{
 				Url: categoryUrl + "&page=" + strconv.Itoa(i),

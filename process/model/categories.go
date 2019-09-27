@@ -8,6 +8,7 @@ const (
 	CategoryValidStatus  = 1
 	CategoryNameField  = "name"
 	CategoryIdField = "id"
+	CategoryStatusField = "status"
 )
 
 type Categories struct {

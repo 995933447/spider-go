@@ -1,18 +1,18 @@
 package itemworker
 
 import (
+	"errors"
 	"fmt"
-	"github.com/pkg/errors"
-	uuid "github.com/satori/go.uuid"
+	uuid "github.com/iris-contrib/go.uuid"
 	"os"
 	"path"
 	"regexp"
 	"spider-go/config"
+	"spider-go/fetcher"
 	"spider-go/logger"
 	"spider-go/parseutil"
-	tangccConfig "spider-go/process/app/tangcc/config"
-	"spider-go/process/app/tangcc/fetcher"
-	"spider-go/process/app/tangcc/persist"
+	xiaoniaoConfig "spider-go/process/app/xiaoniao/config"
+	"spider-go/process/app/xiaoniao/persist"
 	"strconv"
 	"strings"
 	"time"
@@ -27,39 +27,44 @@ var (
 	keyRe = regexp.MustCompile(`#EXT-X-KEY:METHOD=AES-128,URI="([^"]+)"`)
 )
 
-var saveChan = persist.Video()
+var saveChan = persist.Videos()
 
 func Videos() chan []config.Item {
-	itemChan := make(chan []config.Item)
-	go func() {
-		items := <- itemChan
-		for _, item := range items {
-			item := item.(tangccConfig.VideoItem)
-			go doVideoWork(item)
+ 	itemChan := make(chan []config.Item)
+ 	go func() {
+ 		for {
+			items := <- itemChan
+			for _, item := range items {
+				item := item.(xiaoniaoConfig.VideoItem)
+				go doVideoWork(item)
+			}
 		}
 	}()
-	return itemChan
+ 	return itemChan
 }
 
-func doVideoWork(item tangccConfig.VideoItem) {
+func doVideoWork(item xiaoniaoConfig.VideoItem) {
 	dirPrefix, _ := uuid.NewV1()
-	dir := fmt.Sprintf("%s/%s", tangccConfig.BaseFileDir, dirPrefix)
+	dir := fmt.Sprintf("%s/%s", xiaoniaoConfig.BaseFileDir, dirPrefix)
+
 	if err := downloadVideo(&item, &dir); err != nil {
 		logger.DefaultLogger.Error(err, nil)
 		return
 	}
+
 	if err := downloadVideoMainImg(&item, &dir); err != nil {
 		logger.DefaultLogger.Error(err, nil)
 		return
 	}
 
 	item.M3u8 = strings.TrimLeft(item.M3u8, "y:/")
-	item.MainImg = strings.TrimLeft(item.MainImg, "y:/")
+	item.Mainimg = strings.TrimLeft(item.Mainimg, "y:/")
 
 	saveChan <- item
 }
 
-func downloadVideo(item *tangccConfig.VideoItem, baseDir *string) error {
+
+func downloadVideo(item *xiaoniaoConfig.VideoItem, baseDir *string) error {
 	// 抓取M3U8内容
 	m3u8Content, err := fetcher.File(item.M3u8)
 	if err != nil {
@@ -70,13 +75,12 @@ func downloadVideo(item *tangccConfig.VideoItem, baseDir *string) error {
 	uriPrefix := url.GetUriPath(item.M3u8)
 	childM3u8 := parseutil.ExtractString(childM3u8Re, m3u8Content)
 	if childM3u8 != "" {
-		host, _ := url.GetHost(item.M3u8)
-		scheme, _ := url.GetScheme(item.M3u8)
-		uriPrefix = fmt.Sprintf("%s://%s/", scheme, strings.TrimLeft(host, "/"))
+		uriPrefix = url.GetUriPath(item.M3u8)
 		item.M3u8 = uriPrefix + strings.TrimLeft(childM3u8, "/")
 		if m3u8Content, err = fetcher.File(item.M3u8); err != nil {
 			return err
 		}
+		uriPrefix = url.GetUriPath(item.M3u8)
 	}
 
 	// 获取视频时长
@@ -107,7 +111,7 @@ func downloadVideo(item *tangccConfig.VideoItem, baseDir *string) error {
 	// 获取并下载密钥
 	key := parseutil.ExtractString(keyRe, m3u8Content)
 	if key != "" {
-		keyContent, err := fetcher.File(fmt.Sprintf("%s%s", uriPrefix, strings.TrimLeft(key, "/")))
+		keyContent, err := fetcher.File(fmt.Sprintf("%s%s", url.GetUriPath(item.M3u8), strings.TrimLeft(key, "/")))
 		if err != nil {
 			return err
 		}
@@ -142,10 +146,11 @@ func downloadVideo(item *tangccConfig.VideoItem, baseDir *string) error {
 					break
 				}
 			}
+			if err != nil {
+				return err
+			}
 		}
-		if err != nil {
-			return err
-		}
+
 
 		//if err != nil {
 		//	time.Sleep(time.Second * time.Duration(rand.RandIntN(5)))
@@ -170,16 +175,16 @@ func downloadVideo(item *tangccConfig.VideoItem, baseDir *string) error {
 	return nil
 }
 
-func downloadVideoMainImg(item *tangccConfig.VideoItem, baseDir *string) error {
-	content, err := fetcher.File(item.MainImg)
+func downloadVideoMainImg(item *xiaoniaoConfig.VideoItem, baseDir *string) error {
+	content, err := fetcher.File(item.Mainimg)
 	if err != nil {
 		return err
 	}
 
-	if mainImg, err := filesystem.UploadFile(content, path.Base(item.MainImg), fmt.Sprintf("%s/images", *baseDir)); err != nil {
+	if mainImg, err := filesystem.UploadFile(content, path.Base(item.Mainimg), fmt.Sprintf("%s/images", *baseDir)); err != nil {
 		return err
 	} else {
-		item.MainImg = mainImg
+		item.Mainimg = mainImg
 	}
 
 	return  nil

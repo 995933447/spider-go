@@ -32,6 +32,7 @@ func Categories(content []byte) config.ParseResult {
 
 	for index := range urls {
 		videoNum, _ :=strconv.Atoi(videoNums[index])
+		categoryName := names[index]
 
 		pages := videoNum / 16 * 3
 		if (videoNum % 16 * 3) > 0 {
@@ -50,7 +51,7 @@ func Categories(content []byte) config.ParseResult {
 			})
 		}
 
-		categoryName := names[index]
+
 		icon := icons[index]
 
 		result.Items = append(result.Items, javdoveConfig.CategoryItem{

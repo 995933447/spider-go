@@ -59,14 +59,14 @@ func createFetcherProcess(itemChan *chan []config.Item, saveChan *chan model.Vid
 					logger.DefaultLogger.Error(err, nil)
 					continue
 				}
-				video.Mainimg = strings.TrimLeft(mainImg, "y:/")
+				video.Mainimg = strings.TrimLeft(mainImg, "w:/")
 
 				m3u8File, err := downloadVideo(video.OriginalM3u8, dir)
 				if err != nil {
 					logger.DefaultLogger.Error(err, nil)
 					continue
 				}
-				video.M3u8 = strings.TrimLeft(m3u8File, "y:/")
+				video.M3u8 = strings.TrimLeft(m3u8File, "w:/")
 
 				category ,err := repository.GetCategory(item.(javdoveConfig.VideoItem).Category)
 				if err != nil {
@@ -169,7 +169,7 @@ func createVideoProcess(processChan *chan processVideo, saveChan *chan model.Vid
 			oldSliceDir := fmt.Sprintf("%s/original", processVideo.storageDir)
 			removeOldSlice(&oldSliceDir)
 
-			processVideo.model.M3u8 = strings.TrimLeft(m3u8, "y:/")
+			processVideo.model.M3u8 = strings.TrimLeft(m3u8, "w:/")
 
 			*saveChan <- processVideo.model
 		}

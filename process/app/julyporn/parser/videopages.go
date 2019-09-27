@@ -26,18 +26,18 @@ func VideoPages(content []byte, categoryName string) config.ParseResult {
 		pageNum = 1
 	}
 
-	if pageNum == 1 {
-		for i := 1; i < pageNum || i == pageNum; i++ {
-			result.Requests = append(result.Requests, config.Request{
-				Url:   julypornConfig.Host + "/videos" + uri + "?page=" + strconv.Itoa(i),
-				Fetch: fetcher.Html,
-				Parse: func(content []byte) config.ParseResult {
-					return Videos(content, categoryName)
-				},
-				ItemChan:   config.NilItemWork(),
-				Distinctor: config.NilDistinctor{},
-			})
-		}
+
+	for i := 1; i < pageNum || i == pageNum; i++ {
+		result.Requests = append(result.Requests, config.Request{
+			Url:   julypornConfig.Host + "/videos" + uri + "?page=" + strconv.Itoa(i),
+			Fetch: fetcher.Html,
+			Parse: func(content []byte) config.ParseResult {
+				return Videos(content, categoryName)
+			},
+			ItemChan:   config.NilItemWork(),
+			Distinctor: config.NilDistinctor{},
+		})
 	}
+
 	return result
 }

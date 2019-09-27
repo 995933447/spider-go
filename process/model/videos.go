@@ -13,7 +13,12 @@ const(
 	VideoNeedntLogin = 0
 )
 
-const VideoCrawlerUrlField = "crawler_url"
+const (
+	VideoCrawlerUrlField = "crawler_url"
+	VideoPreviewVideo = "preview_video"
+	VideoStatusField = "status"
+	VideoIdField = "id"
+)
 
 type Videos struct {
 	Id int64

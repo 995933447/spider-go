@@ -27,9 +27,7 @@ func Categories(content []byte) config.ParseResult {
 
 	for index := range urls {
 		name := strings.Trim(names[index], " ")
-		if name != "动漫" {
-			continue
-		}
+
 		result.Requests = append(result.Requests, config.Request{
 			Url:   julypornConfig.Host + urls[index],
 			Fetch: fetcher.Html,

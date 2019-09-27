@@ -6,6 +6,7 @@ const (
 	SubjectValidStatus  = 1
 	SubjectNameFiled  = "name"
 	SubjectCategoryIdField  = "category_id"
+	SubjectIdField  = "id"
 )
 
 type Subjects struct {

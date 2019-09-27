@@ -4,6 +4,10 @@ import "time"
 
 const (
 	TagValidStatus  = 1
+)
+
+const (
+	TagIdField = "id"
 	TagNameField  = "name"
 )
 
