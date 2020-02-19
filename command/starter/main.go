@@ -8,9 +8,9 @@ import (
 	"spider-go/fetcher"
 	"spider-go/logger"
 	//airavConfig "spider-go/process/app/airav/config"
-	//"spider-go/process/app/airav/parser"
-	//"spider-go/process/app/avhd101/persist"
-	//"spider-go/process/app/javdove/itemworker"
+	"spider-go/process/app/airav/parser"
+	"spider-go/process/app/avhd101/persist"
+	"spider-go/process/app/javdove/itemworker"
 	//javdoveConfig "spider-go/process/app/javdove/config"
 	//javdoveParse "spider-go/process/app/javdove/parser"
 	tangccConfig "spider-go/process/app/tangcc/config"
@@ -38,13 +38,13 @@ func runEngine(engine config.Engine)  {
 		//	Distinctor: config.NilDistinctor{},
 		//},
 		//
-		//config.Request{
-		//	Url:        javdoveConfig.Host + "/categories",
-		//	Fetch:      fetcher.Html,
-		//	Parse:      javdoveParse.Categories,
-		//	ItemChan:   itemworker.Categories(),
-		//	Distinctor: config.NilDistinctor{},
-		//},
+		config.Request{
+			Url:        javdoveConfig.Host + "/categories",
+			Fetch:      fetcher.Html,
+			Parse:      javdoveParse.Categories,
+			ItemChan:   itemworker.Categories(),
+			Distinctor: config.NilDistinctor{},
+		},
 		//
 		//config.Request{
 		//	Url: julypornConfig.Host + "/videos/amateur/free",
